@@ -1,0 +1,100 @@
+<!DOCTYPE html><html lang="pt-br"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Enviar formulário de contato com anexo em PHP - Blog do Duda</title><meta name="description" content="Recentemente precisei montar um formulário de contato em PHP com a possibilidade de enviar um arquivo anexado, e percebi que o PHP não suporta isso nativamente pela função mail(). Como eu não quis usar nenhuma biblioteca de terceiros pronta, vi que seria necessário alterar o header&hellip;"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="stylesheet" href="https://dudaskank.com/media/plugins/syntaxHighlighter/prism-black.css"><link rel="canonical" href="https://dudaskank.com/enviar-formulario-de-contato-com-anexo-em-php/"><link rel="alternate" type="application/atom+xml" href="https://dudaskank.com/feed.xml" title="Blog do Duda - RSS"><link rel="alternate" type="application/json" href="https://dudaskank.com/feed.json" title="Blog do Duda - JSON"><meta property="og:title" content="Enviar formulário de contato com anexo em PHP"><meta property="og:site_name" content="Blog do Duda"><meta property="og:description" content="Recentemente precisei montar um formulário de contato em PHP com a possibilidade de enviar um arquivo anexado, e percebi que o PHP não suporta isso nativamente pela função mail(). Como eu não quis usar nenhuma biblioteca de terceiros pronta, vi que seria necessário alterar o header&hellip;"><meta property="og:url" content="https://dudaskank.com/enviar-formulario-de-contato-com-anexo-em-php/"><meta property="og:type" content="article"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@dudaskank"><meta name="twitter:title" content="Enviar formulário de contato com anexo em PHP"><meta name="twitter:description" content="Recentemente precisei montar um formulário de contato em PHP com a possibilidade de enviar um arquivo anexado, e percebi que o PHP não suporta isso nativamente pela função mail(). Como eu não quis usar nenhuma biblioteca de terceiros pronta, vi que seria necessário alterar o header&hellip;"><link rel="stylesheet" href="https://dudaskank.com/assets/css/style.css?v=2110fdcc9616a96348b5f5ad11c64055"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://dudaskank.com/enviar-formulario-de-contato-com-anexo-em-php/"},"headline":"Enviar formulário de contato com anexo em PHP","datePublished":"2015-06-03T20:11-03:00","dateModified":"2026-02-23T09:44-03:00","description":"Recentemente precisei montar um formulário de contato em PHP com a possibilidade de enviar um arquivo anexado, e percebi que o PHP não suporta isso nativamente pela função mail(). Como eu não quis usar nenhuma biblioteca de terceiros pronta, vi que seria necessário alterar o header&hellip;","author":{"@type":"Person","name":"Dudaskank","url":"https://dudaskank.com/authors/dudaskank/"},"publisher":{"@type":"Organization","name":"Dudaskank"}}</script><noscript><style>img[loading] {
+                    opacity: 1;
+                }</style></noscript></head><body class="post-template"><header class="top js-header"><a class="logo" href="https://dudaskank.com/">Blog do Duda</a></header><main class="post"><article class="content"><div class="hero hero--noimage"><header class="hero__content"><div class="wrapper"><h1>Enviar formulário de contato com anexo em PHP</h1><div class="feed__meta content__meta"><a href="https://dudaskank.com/authors/dudaskank/" class="feed__author">Dudaskank</a> <time datetime="2015-06-03T20:11" class="feed__date">03/06/2015</time></div></div></header></div><div class="entry-wrapper content__entry"><p>Recentemente precisei montar um formulário de contato em PHP com a possibilidade de enviar um arquivo anexado, e percebi que o PHP não suporta isso nativamente pela função <a href="http://php.net/manual/pt_BR/function.mail.php" target="_blank" rel="noopener">mail()</a>. Como eu não quis usar nenhuma biblioteca de terceiros pronta, vi que seria necessário alterar o header do e-mail e acrescentar nele o anexo. Para alcançar esse resultado, primeiramente precisei alterar o meu formulário. Este abaixo serve como exemplo, note o atributo <code>enctype="multipart/form-data"</code>, sem ele não vai funcionar.</p><pre class="language-html line-numbers"><code>&lt;!-- form.php --&gt;
+&lt;form action="envio.php" method="post" enctype="multipart/form-data"&gt;
+    &lt;p&gt;
+        &lt;label for="nome"&gt;Nome&lt;/label&gt;
+        &lt;input type="text" name="nome" id="nome" required="" /&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;label for="email"&gt;Email&lt;/label&gt;
+        &lt;input type="email" name="email" id="email" required="" /&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;label for="anexo"&gt;Anexo&lt;/label&gt;
+        &lt;input type="hidden" name="MAX_FILE_SIZE" value="100000" /&gt;
+        &lt;input type="file" id="anexo" name='anexo' /&gt;
+    &lt;/p&gt;
+&lt;/form&gt;</code></pre><p>No script que vai receber os dados para envio, verifico a existência do anexo, já que ele é opcional, e codifico ele no header do e-mail. Aproveito e também dou uma limpada nos textos enviados, para evitar o chamado Email injection, já que não devemos confiar em textos enviados pelo usuário.</p><pre class="language-php line-numbers"><code>&lt;?php
+// evitar email injection
+function clean_string($string) {
+    $bad = array(
+        "content-type",
+        "bcc:",
+        "to:",
+        "cc:",
+        "href"
+    );
+    return str_replace($bad, "", $string);
+}
+
+//variáveis
+$status = false;
+$nome = clean_string($_POST['nome']);
+$email = clean_string($_POST['email']);
+$mensagem = "Enviado pelo &lt;strong&gt;formulário de contato&lt;/strong&gt;";
+$destino = "seuemail@seuhost.com.br";  //E-mail do destinatário
+$assunto = "Contato"; // Assunto do E-mail
+
+// se o nome temporário do arquivo estiver vazio, ele não foi enviado
+if (empty($_FILES['anexo']['tmp_name'])) {
+    //cabeçalho
+    $headers = "Content-type: text/html; charset=utf-8\r\n";
+    $headers .= "From: $nome &lt;$email&gt;\r\n"; //E-Mail do destinatário
+    $headers .= "Reply-To: $email\r\n";
+    //envio
+    $status = mail ($destino, $assunto, $observacao, $headers);
+} else {
+    // inicialmente, abre o arquivo e converte ele para base64
+    $file = $_FILES['anexo']['tmp_name'];
+    $originalFile = $_FILES['anexo']['name'];
+    $file_size = filesize($file);
+    $handle = fopen($file, "rb");
+    $content = fread($handle, $file_size);
+    fclose($handle);
+    $content = chunk_split(base64_encode($content));
+
+    // separador aleatório necessário para enviar conteúdo mixed
+    $separator = md5(time());
+
+    // fim de linha (usando uma constante do PHP para fim de linha)
+    $eol = PHP_EOL;
+
+    // cabeçalho principal (multipart obrigatório)
+    $headers = "From: $nome &lt;$email&gt;" . $eol;
+    $headers .= "MIME-Version: 1.0" . $eol;
+    $headers .= "Content-Type: multipart/mixed; boundary=\"" . $separator . "\"" . $eol . $eol;
+    $headers .= "Content-Transfer-Encoding: 8bit" . $eol;
+    $headers .= "This is a MIME encoded message." . $eol . $eol;
+
+    // mensagem (apenas formato html aqui)
+    $headers .= "--" . $separator . $eol;
+    $headers .= "Content-Type: text/html; charset=\"utf-8\"" . $eol;
+    $headers .= $mensagem . $eol . $eol;
+
+    // anexo usando o nome do arquivo original
+    $headers .= "--" . $separator . $eol;
+    $headers .= "Content-Type: application/octet-stream; name=\"" . $originalFile . "\"" . $eol;
+    $headers .= "Content-Transfer-Encoding: base64" . $eol;
+    $headers .= "Content-Disposition: attachment" . $eol . $eol;
+    $headers .= $content . $eol . $eol;
+    $headers .= "--" . $separator . "--";
+
+    // enviar email
+    $status = mail($destino, $assunto, "", $headers);
+}
+
+if ($status) {
+    echo "Envio com sucesso";
+} else {
+    echo "Ocorreu um erro no envio";
+}</code></pre><p>Pronto, com isso agora o formulário é capaz de enviar os anexos corretamente. Fontes</p><ul><li><a href="http://php.net/manual/pt_BR/function.mail.php" target="_blank" rel="noopener">http://php.net/manual/pt_BR/function.mail.php</a></li><li><a href="http://php.net/manual/en/features.file-upload.post-method.php" target="_blank" rel="noopener">http://php.net/manual/en/features.file-upload.post-method.php</a></li><li><a href="http://stackoverflow.com/a/12313090/266569" target="_blank" rel="noopener">http://stackoverflow.com/a/12313090/266569</a></li><li><a href="http://stackoverflow.com/a/21472759/266569" target="_blank" rel="noopener">http://stackoverflow.com/a/21472759/266569</a></li><li><a href="http://webcheatsheet.com/php/send_email_text_html_attachment.php" target="_blank" rel="noopener">http://webcheatsheet.com/php/send_email_text_html_attachment.php</a></li></ul></div><footer class="content__footer"><div class="entry-wrapper"><p class="content__updated">Artigo atualizado em 23/02/2026</p><div class="content__actions"><ul class="content__tag"><li><a href="https://dudaskank.com/tags/anexo/">anexo</a></li><li><a href="https://dudaskank.com/tags/email/">email</a></li><li><a href="https://dudaskank.com/tags/php/">PHP</a></li></ul><div class="content__share"><button class="btn--icon content__share-button js-content__share-button"><svg width="20" height="20" aria-hidden="true"><use xlink:href="https://dudaskank.com/assets/svg/svg-map.svg#share"></use></svg> <span>Compartilhar</span></button><div class="content__share-popup js-content__share-popup"><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fdudaskank.com%2Fenviar-formulario-de-contato-com-anexo-em-php%2F&amp;via=dudaskank&amp;text=Enviar%20formul%C3%A1rio%20de%20contato%20com%20anexo%20em%20PHP" class="js-share twitter" rel="nofollow noopener noreferrer"><svg class="icon" aria-hidden="true" focusable="false"><use xlink:href="https://dudaskank.com/assets/svg/svg-map.svg#twitter"/></svg> <span>Twitter</span> </a><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fdudaskank.com%2Fenviar-formulario-de-contato-com-anexo-em-php%2F" class="js-share linkedin" rel="nofollow noopener noreferrer"><svg class="icon" aria-hidden="true" focusable="false"><use xlink:href="https://dudaskank.com/assets/svg/svg-map.svg#linkedin"/></svg> <span>LinkedIn</span> </a><a href="https://api.whatsapp.com/send?text=Enviar%20formul%C3%A1rio%20de%20contato%20com%20anexo%20em%20PHP https%3A%2F%2Fdudaskank.com%2Fenviar-formulario-de-contato-com-anexo-em-php%2F" class="js-share whatsapp" rel="nofollow noopener noreferrer"><svg class="icon" aria-hidden="true" focusable="false"><use xlink:href="https://dudaskank.com/assets/svg/svg-map.svg#whatsapp"/></svg> <span>WhatsApp</span></a></div></div></div><div class="content__bio bio"><div><h3 class="h4 bio__name"><a href="https://dudaskank.com/authors/dudaskank/" rel="author">Dudaskank</a></h3></div></div></div><nav class="content__nav"><div class="wrapper"><div class="content__nav-inner"><div class="content__nav-prev"><a href="https://dudaskank.com/servidor-mostrando-codigo-php-ao-inves-de-processa-lo/" class="content__nav-link" rel="prev"><div><span>Anterior</span> Servidor mostrando código PHP ao invés de processá-lo</div></a></div><div class="content__nav-next"><a href="https://dudaskank.com/computador-gamer-barato-para-as-ferias/" class="content__nav-link" rel="next"><div><span>Próximo</span> Computador gamer barato para as férias</div><figure class="content__nav-image"><img src="https://dudaskank.com/media/posts/7/responsive/img18_mini-xs.jpg" class="lazyload" loading="lazy" alt="" height="599" width="599"></figure></a></div></div></div></nav></footer></article></main><footer class="footer footer--glued"><div class="wrapper"><div class="footer__copyright"><p>Powered by Publii</p></div><button id="backToTop" class="footer__bttop" aria-label="Voltar ao topo" title="Voltar ao topo"><svg width="20" height="20"><use xlink:href="https://dudaskank.com/assets/svg/svg-map.svg#toparrow"/></svg></button></div></footer><script defer="defer" src="https://dudaskank.com/assets/js/scripts.min.js?v=d0fc1030089a37f93a2d51bf6d07565c"></script><script>window.publiiThemeMenuConfig={mobileMenuMode:'sidebar',animationSpeed:300,submenuWidth: 'auto',doubleClickTime:500,mobileMenuExpandableSubmenus:true,relatedContainerForOverlayMenuSelector:'.top'};</script><script>var images = document.querySelectorAll('img[loading]');
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+                images[i].classList.add('is-loaded');
+            } else {
+                images[i].addEventListener('load', function () {
+                    this.classList.add('is-loaded');
+                }, false);
+            }
+        }</script><script defer="defer" src="https://dudaskank.com/media/plugins/syntaxHighlighter/prism.js"></script><script defer="defer" src="https://dudaskank.com/media/plugins/syntaxHighlighter/prism-line-numbers.min.js"></script><script defer="defer" src="https://dudaskank.com/media/plugins/syntaxHighlighter/clipboard.min.js"></script><script defer="defer" src="https://dudaskank.com/media/plugins/syntaxHighlighter/prism-copy-to-clipboard.min.js"></script></body></html>

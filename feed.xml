@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+    <title>Blog do Duda</title>
+    <link href="https://dudaskank.com/feed.xml" rel="self" />
+    <link href="https://dudaskank.com" />
+    <updated>2026-02-23T12:02:37-03:00</updated>
+    <author>
+        <name>Dudaskank</name>
+    </author>
+    <id>https://dudaskank.com</id>
+
+    <entry>
+        <title>Testando o Publii</title>
+        <author>
+            <name>Dudaskank</name>
+        </author>
+        <link href="https://dudaskank.com/testando-o-publii/"/>
+        <id>https://dudaskank.com/testando-o-publii/</id>
+            <category term="teste"/>
+            <category term="Publii"/>
+
+        <updated>2026-02-22T13:58:52-03:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    Depois de muitos anos com o Wordpress, percebi que se eu quisesse continuar com o blog sem gastar dinheiro eu precisaria transformar meu blog num site estático, estou testando várias alternativas sem me aprofundar tanto, apenas olhando a praticidade e facilidade pra escrever e publicar,&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Depois de muitos anos com o <a href="https://wordpress.org/" title="Wordpress" target="_blank" rel="nofollow noopener noreferrer">Wordpress</a>, percebi que se eu quisesse continuar com o blog sem gastar dinheiro eu precisaria transformar meu blog num site estático, estou testando várias alternativas sem me aprofundar tanto, apenas olhando a praticidade e facilidade pra escrever e publicar, além da segurança natural de um site estático.</p>
+<p>Foi então que cheguei na opção do <a href="https://getpublii.com/" target="_blank" rel="nofollow noopener noreferrer">Publii</a>, e aparentemente ele vai ter tudo o que costumo usar pra escrever e documentar minhas coisas aqui, apesar de já ter um certo tempo que não posto nada (desde 2018!)</p>
+<p>😀 temos emoticions/emojis no editor WYSIWYG, "muito" importante, opção para editar em blocos, não sei explicar bem que ainda não precisei usar, e editar o HTML diretamente, e o editor visual tem várias outras formas pra formatar um parágrafo, por exemplo:</p>
+<p class="msg msg--info">Um div de info aqui,</p>
+<p class="msg msg--success">Sucesso agora</p>
+<p class="msg msg--warning">Atenção! Muito obrigado pela sua atenção!</p>
+<p class="dropcap">Drop cap?</p>
+<p class="msg msg--highlight ">Highlight</p>
+<p>Tabelas também temos:</p>
+<table style="border-collapse: collapse; width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 33.3054%;">Nome</td>
+<td style="width: 33.3054%;">Quantidade</td>
+<td style="width: 33.3078%;">Preço</td>
+</tr>
+<tr>
+<td style="width: 33.3054%;">RTX 5090</td>
+<td style="width: 33.3054%;">10</td>
+<td style="width: 33.3078%;">R$ 10.000,00</td>
+</tr>
+<tr>
+<td style="width: 33.3054%;">RX 580</td>
+<td style="width: 33.3054%;">100</td>
+<td style="width: 33.3078%;">R$ 650</td>
+</tr>
+</tbody>
+</table>
+<p>E não podia faltar, claro, um bloco de código formatado e estilizado, porém precisou de um plugin, <a href="https://getpublii.com/docs/syntax-highlighter.html" target="_blank" rel="nofollow noopener noreferrer">Syntax Highligther</a>, que por sua vez usa o <a href="https://prismjs.com/" target="_blank" rel="nofollow noopener noreferrer">Prism.js</a> para realizar essa tarefa, e como pode ver abaixo fica muito bom. Há diversos outros plugins prontos, inclusive comentários no Disquss que penso se devo ou não colocar.</p>
+<pre class="language-c line-numbers"><code>#include &lt;stdio.h&gt;
+
+int main() {
+    printf("Oi Publii!\n");
+    return 0;
+}</code></pre>
+<p>Além disso tudo, possui uma forma de importar os posts de um backup do Wordpress, o que adianta demais o meu lado, e possui integração com o Github e por consequência o Github Pages, além de muitas outras, que pretendo usar quando gerar e publicar o blog. Tenho hoje menos de 20 artigos, é bem rápido pra publicar, mas não sei se continuará assim com 200 ou 2000, quem sabe se eu não me empolgo e escrevo bastante.</p>
+<figure class="post__image">Sem necessidade para outros parágrafos.<a href="https://www.umsabadoqualquer.com/ryu-na-balada-tirinha-nerd-1/" title="RYU na balada! – Tirinha Nerd 1"  target="_blank" rel="noopener noreferrer"><img loading="lazy" class="post__image" src="https://dudaskank.com/media/posts/1/29-hadouken.jpg" alt="" width="480" height="960" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://dudaskank.com/media/posts/1/responsive/29-hadouken-xs.jpg 640w ,https://dudaskank.com/media/posts/1/responsive/29-hadouken-sm.jpg 768w ,https://dudaskank.com/media/posts/1/responsive/29-hadouken-md.jpg 1024w ,https://dudaskank.com/media/posts/1/responsive/29-hadouken-lg.jpg 1366w ,https://dudaskank.com/media/posts/1/responsive/29-hadouken-xl.jpg 1600w ,https://dudaskank.com/media/posts/1/responsive/29-hadouken-2xl.jpg 1920w"></figure></a></p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Não consegue abrir a calculadora do Windows? Tente reinstalá-la</title>
+        <author>
+            <name>Dudaskank</name>
+        </author>
+        <link href="https://dudaskank.com/nao-consegue-abrir-a-calculadora-do-windows-tente-reinstala-la/"/>
+        <id>https://dudaskank.com/nao-consegue-abrir-a-calculadora-do-windows-tente-reinstala-la/</id>
+        <media:content url="https://dudaskank.com/media/posts/19/calculadora.png" medium="image" />
+
+        <updated>2018-05-10T12:54:44-03:00</updated>
+            <summary type="html">
+                <![CDATA[
+                        <img src="https://dudaskank.com/media/posts/19/calculadora.png" alt="" />
+                    Vira e mexe, minha calculadora deixa de funcionar no Windows 10. Acho que alguma atualização do sistema que acaba deixando ela quebrada. Percebo isso quando eu tento rodar a calculadora e ao invés de ela aparecer, surge a tela "Abrir com", perguntando com qual aplicativo&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://dudaskank.com/media/posts/19/calculadora.png" class="type:primaryImage" alt="" /></p>
+                <p>Vira  e mexe, minha calculadora deixa de funcionar no Windows 10. Acho que alguma atualização do sistema que acaba deixando ela quebrada. Percebo isso quando eu tento rodar a calculadora e ao invés de ela aparecer, surge a tela "Abrir com", perguntando com qual aplicativo eu quero abrir (não faz sentido nenhum realmente). Para resolver isso, você pode desinstalar e instalar a calculadora novamente, através do PowerShell, seguindo estes simples passos:</p>
+<ol>
+<li>Clique no botão "Windows", digite "powershell". Vai aparecer ele nas primeiras opções.<br><figure class="post__image"><img loading="lazy"  src="https://dudaskank.com/media/posts/19/reinstalar-calculadora-1.png" alt="" width="389" height="584" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://dudaskank.com/media/posts/19/responsive/reinstalar-calculadora-1-xs.png 640w ,https://dudaskank.com/media/posts/19/responsive/reinstalar-calculadora-1-sm.png 768w ,https://dudaskank.com/media/posts/19/responsive/reinstalar-calculadora-1-md.png 1024w ,https://dudaskank.com/media/posts/19/responsive/reinstalar-calculadora-1-lg.png 1366w ,https://dudaskank.com/media/posts/19/responsive/reinstalar-calculadora-1-xl.png 1600w ,https://dudaskank.com/media/posts/19/responsive/reinstalar-calculadora-1-2xl.png 1920w"></figure></li>
+<li>Clique com o botão direito no ícone do "Windows PowerShell", e "Executar como administrador". Confirme que você quer isso mesmo. <figure class="post__image aligncenter wp-image-133 size-full"><img loading="lazy"  src="https://dudaskank.com/media/posts/19/reinstalar-calculadora-2.png" alt="" width="390" height="582" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://dudaskank.com/media/posts/19/responsive/reinstalar-calculadora-2-xs.png 640w ,https://dudaskank.com/media/posts/19/responsive/reinstalar-calculadora-2-sm.png 768w ,https://dudaskank.com/media/posts/19/responsive/reinstalar-calculadora-2-md.png 1024w ,https://dudaskank.com/media/posts/19/responsive/reinstalar-calculadora-2-lg.png 1366w ,https://dudaskank.com/media/posts/19/responsive/reinstalar-calculadora-2-xl.png 1600w ,https://dudaskank.com/media/posts/19/responsive/reinstalar-calculadora-2-2xl.png 1920w"></figure></li>
+<li>Para remover a calculadora, execute o comando:<br>
+<pre class="language-batch line-numbers"><code>Get-AppxPackage *windowscalculator* | Remove-AppxPackage</code></pre>
+</li>
+<li>Para reinstalar a calculadora, use o comando (uma linha só):<br>
+<pre class="language-batch line-numbers"><code>Get-AppxPackage -allusers *windowscalculator* | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register “$($_.InstallLocation)\AppXManifest.xml”}</code></pre>
+</li>
+</ol>
+<p>Pronto, isso para mim bastou e agora consigo usar novamente a calculadora do Windows.</p>
+<h3>Fonte</h3>
+<p><a href="https://superuser.com/questions/978877/how-can-i-reinstall-windows-10s-calculator-app" target="_blank" rel="noopener">How can I reinstall Windows 10's calculator app?</a></p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Como copiar um diretório inteiro no Unix</title>
+        <author>
+            <name>Dudaskank</name>
+        </author>
+        <link href="https://dudaskank.com/como-copiar-um-diretorio-inteiro-no-unix/"/>
+        <id>https://dudaskank.com/como-copiar-um-diretorio-inteiro-no-unix/</id>
+        <media:content url="https://dudaskank.com/media/posts/18/samuel-zeller-360588-web-2.jpg" medium="image" />
+
+        <updated>2017-10-20T01:34:54-02:00</updated>
+            <summary type="html">
+                <![CDATA[
+                        <img src="https://dudaskank.com/media/posts/18/samuel-zeller-360588-web-2.jpg" alt="" />
+                    Mais um da série revivendo postagens antigas, antes de perder o BD deste blog e recuperado do Internet Archive. Esse é bem fácil, vou escrever aqui para lembrar depois rs. cp -r 'diretorio/a/copiar' 'diretorio/novo' Aliás, o diretório novo é criado se não existir. Photo by&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://dudaskank.com/media/posts/18/samuel-zeller-360588-web-2.jpg" class="type:primaryImage" alt="" /></p>
+                <p>Mais um da série revivendo postagens antigas, antes de perder o BD deste blog e recuperado do Internet Archive.</p>
+<p>Esse é bem fácil, vou escrever aqui para lembrar depois rs.</p>
+<div class="entry">
+<pre class="language-bash line-numbers"><code>cp -r 'diretorio/a/copiar' 'diretorio/novo'</code></pre>
+<p><span style="font-size: inherit;">Aliás, o diretório novo é criado se não existir.</span></p>
+<p><span style="font-size: inherit;">Photo by </span><a href="https://unsplash.com/photos/vpR0oc4X8Mk?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" style="font-size: inherit;">Samuel Zeller</a><span style="font-size: inherit;"> on </span><a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" style="font-size: inherit;">Unsplash</a></p>
+</div>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Como encontrar um arquivo no Unix</title>
+        <author>
+            <name>Dudaskank</name>
+        </author>
+        <link href="https://dudaskank.com/como-encontrar-um-arquivo-no-unix/"/>
+        <id>https://dudaskank.com/como-encontrar-um-arquivo-no-unix/</id>
+        <media:content url="https://dudaskank.com/media/posts/17/binoculars-1015265_1280_mini-2.jpg" medium="image" />
+
+        <updated>2017-10-20T01:17:30-02:00</updated>
+            <summary type="html">
+                <![CDATA[
+                        <img src="https://dudaskank.com/media/posts/17/binoculars-1015265_1280_mini-2.jpg" alt="" />
+                    Revivendo uma postagem de 05/10/2010, que vira e mexe eu preciso relembrar pois esqueço fácil rs. Tinha postado neste mesmo blog, mas tive problemas com o BD e perdi ela, mas felizmente consigo recuperar através do Internet Archive. Vamos a ela: Eu, como bom usuário&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://dudaskank.com/media/posts/17/binoculars-1015265_1280_mini-2.jpg" class="type:primaryImage" alt="" /></p>
+                <p>Revivendo uma postagem de 05/10/2010, que vira e mexe eu preciso relembrar pois esqueço fácil rs. Tinha postado neste mesmo blog, mas tive problemas com o BD e perdi ela, mas felizmente consigo recuperar através do Internet Archive. Vamos a ela: Eu, como bom usuário de Windows antes de 95, convivi muito com o DOS e seus comandos que lembro até hoje. Um deles era o <code>dir/s</code>, muito usado para saber quantos MB eram usados por meus jogos ou para procurar algum arquivo no disco. Pois bem, o tempo passou e novamente me vejo querendo saber onde está um arquivo no disco, ou querendo saber quanto meu diretório home está usando de espaço do disco. Até aí tudo bem, o problema é que agora estou num ambiente Unix. E agora? Depois de algumas pesquisas, vi que não é tão difícil assim também não.</p>
+<h3>ESPAÇO UTILIZADO</h3>
+<p>Para saber quanto de espaço foi utilizado no diretório home (~), basta usar o comando <code>du</code>:</p>
+<pre class="language-bash line-numbers"><code>du -hs ~</code></pre>
+<p>Este comando mostra o espaço em disco utilizado, os parâmetros <code>h</code> e <code>s</code> são para mostrar os resultados de maneira fácil de ler e apenas do arquivo/diretório em questão, respectivamente. Sem o <code>s</code> ele mostra o espaço usado por cada arquivo no diretório.</p>
+<h3>PROCURANDO UM ARQUIVO</h3>
+<p>Para procurar um arquivo, o comando utilizado é o <code>find</code>. Este comando é muito poderoso, consegue encontrar arquivos e diretórios por nome, por data e hora de modificação, e muitas outras maneiras. Por exemplo, se eu quero encontrar o .jar do oracle, que eu sei o nome (ojdbc14.jar), a linha de comando é a seguinte:</p>
+<pre class="language-bash line-numbers"><code>find / -name ojdbc14.jar</code></pre>
+<p>Porém, no meu caso, as mensagens de erro ficam poluindo muito a tela (muitos diretórios sem permissão para leitura), e também como demora demais o processo para encontrar arquivos na máquina inteira, eu direciono a saída padrão para um arquivo, a saída de erro para /dev/null e faço rodar em segundo plano, tudo isso com esta linha de comando aqui:</p>
+<pre class="language-bash line-numbers"><code>find / -name ojdbc14.jar &gt; find.txt 2&gt; /dev/null &amp;</code></pre>
+<p>Bacana né? O <code>&gt;</code> redireciona a saída padrão, o <code>2&gt;</code> a saída de erro e o <code>&amp;</code> faz o processo rodar em 2º plano.</p>
+<p>Fonte: <a href="http://linuxgazette.net/issue54/tag/15.html" target="_blank" rel="noopener">http://linuxgazette.net/issue54/tag/15.html</a></p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Resolver problema de tela preta em conexão de área de trabalho remota</title>
+        <author>
+            <name>Dudaskank</name>
+        </author>
+        <link href="https://dudaskank.com/resolver-problema-de-tela-preta-em-conexao-de-area-de-trabalho-remota/"/>
+        <id>https://dudaskank.com/resolver-problema-de-tela-preta-em-conexao-de-area-de-trabalho-remota/</id>
+        <media:content url="https://dudaskank.com/media/posts/16/ctrlaltdel-2.png" medium="image" />
+
+        <updated>2017-05-17T01:17:59-03:00</updated>
+            <summary type="html">
+                <![CDATA[
+                        <img src="https://dudaskank.com/media/posts/16/ctrlaltdel-2.png" alt="" />
+                    Hoje aconteceu comigo algo inusitado ao conectar no meu serviço através da conexão de área de trabalho remota, também conhecido por RDP e Remote Desktop: após o login, a tela ficou preta e não saía disso. Achei que a máquina estava "pensando" ainda, pois ela&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://dudaskank.com/media/posts/16/ctrlaltdel-2.png" class="type:primaryImage" alt="" /></p>
+                <p>Hoje aconteceu comigo algo inusitado ao conectar no meu serviço através da conexão de área de trabalho remota, também conhecido por RDP e Remote Desktop: após o login, a tela ficou preta e não saía disso.</p>
+<p>Achei que a máquina estava "pensando" ainda, pois ela tem pouca memória RAM, e aguardei, mas nada de aparecer a tela. Conseguia conectar também pelo SSH e já pensei em reiniciar a máquina, mas tinha vários arquivos abertos e todos no ponto que precisava olhar.</p>
+<p>Foi então que busquei uma alternativa pra isso, e consegui encontrar: bastou entrar com as teclas Ctrl+Alt+End, que envia um Ctrl+Alt+Del na máquina remota, e apertar no botão "Cancelar", simples assim.</p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Logoff um usuário pela linha de comando</title>
+        <author>
+            <name>Dudaskank</name>
+        </author>
+        <link href="https://dudaskank.com/logoff-um-usuario-pela-linha-de-comando/"/>
+        <id>https://dudaskank.com/logoff-um-usuario-pela-linha-de-comando/</id>
+
+        <updated>2017-04-27T18:17:34-03:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    Aqui em casa, uso um computador para trabalhar e jogar, que fica no meu escritório, mas é comum minha esposa ou meu filho usar o PC uma hora ou outra. Porém, normalmente eles não fazem logoff, e fica portanto com possíveis janelas de browser e&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Aqui em casa, uso um computador para trabalhar e jogar, que fica no meu escritório, mas é comum minha esposa ou meu filho usar o PC uma hora ou outra. Porém, normalmente eles não fazem logoff, e fica portanto com possíveis janelas de browser e jogos abertos. Pesquisando uma solução para fazer logoff deles sem ter de ir em "Trocar usuário", me deparei com uma postagem no site Superuser: <a href="https://superuser.com/questions/650816/log-off-a-disconnected-user-remotely" target="_blank" rel="noopener noreferrer">Log off a disconnected user remotely</a>, do usuário thePurpleMonkey. Não é exatamente o que eu preciso, porém a resposta do usuário Luiz Angelo me deu o caminho das pedras. Para verificar quais sessões estão rodando na máquina, no prompt de comando basta digitar o comando <code>qwinsta</code>:</p>
+<pre class="language-batch line-numbers"><code>C:\Users\Eduardo&gt;qwinsta
+ SESSIONNAME       USERNAME                 ID  STATE   TYPE        DEVICE
+ services                                    0  Disco
+&gt;console           Eduardo                   2  Ativo
+ rdp-tcp                                 65536  Escutar</code></pre>
+<p>Como pode ser observado, temos uma coluna "ID" ali, e é o valor dessa coluna que passamos para o comando logoff. Numa janela de comando com privilégios de admin, basta executar o comando:</p>
+<pre class="language-batch line-numbers"><code>logoff &lt;ID da sessão&gt;</code></pre>
+<p>E pronto, assim que o comando retorna, a sessão do usuário que você passou já não existe mais.</p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Adicione uma linha com os número no teclado do Google do Android</title>
+        <author>
+            <name>Dudaskank</name>
+        </author>
+        <link href="https://dudaskank.com/adicione-uma-linha-com-os-numero-no-teclado-do-google-do-android/"/>
+        <id>https://dudaskank.com/adicione-uma-linha-com-os-numero-no-teclado-do-google-do-android/</id>
+        <media:content url="https://dudaskank.com/media/posts/14/teclado-gboard.png" medium="image" />
+
+        <updated>2017-01-05T18:10:50-02:00</updated>
+            <summary type="html">
+                <![CDATA[
+                        <img src="https://dudaskank.com/media/posts/14/teclado-gboard.png" alt="" />
+                    Muitas vezes estou digitando no teclado e fico procurando os números, aí tenho que apertar a tecla que mostra os números e mais um monte de coisa que eu não precisava, por exemplo. Costuma acontecer isso em diversas situações, como ao digitar senhas, ou quando&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://dudaskank.com/media/posts/14/teclado-gboard.png" class="type:primaryImage" alt="" /></p>
+                <p>Muitas vezes estou digitando no teclado e fico procurando os números, aí tenho que apertar a tecla que mostra os números e mais um monte de coisa que eu não precisava, por exemplo. Costuma acontecer isso em diversas situações, como ao digitar senhas, ou quando você manda um zapzap dizendo que achou uma promoção muito boa no mercado e quer passar o preço. Pensando nisso em outras coisas, o Google inclui no seu teclado, agora chamado de <a href="https://play.google.com/store/apps/details?id=com.google.android.inputmethod.latin" target="_blank" rel="noopener">Gboard</a>, uma opção exclusivamente para isso. Para encontrar e ativar a opção é muito simples.</p>
+<ol>
+<li>Abra o menu de configurações do GBoard, pelo teclado segure a tecla da vírgula até aparecer e selecione o ícone da engrenagem.</li>
+<li>Em seguida, escolha a opção Config. do teclado Gboard.</li>
+<li>Escolha a opção preferências</li>
+<li>Ative a opção "Linha de números".</li>
+</ol>
+<figure class="post__image"><img loading="lazy"  src="https://dudaskank.com/media/posts/14/add-row-numbers-tinypng.png" width="3620" height="1280" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://dudaskank.com/media/posts/14/responsive/add-row-numbers-tinypng-xs.png 640w ,https://dudaskank.com/media/posts/14/responsive/add-row-numbers-tinypng-sm.png 768w ,https://dudaskank.com/media/posts/14/responsive/add-row-numbers-tinypng-md.png 1024w ,https://dudaskank.com/media/posts/14/responsive/add-row-numbers-tinypng-lg.png 1366w ,https://dudaskank.com/media/posts/14/responsive/add-row-numbers-tinypng-xl.png 1600w ,https://dudaskank.com/media/posts/14/responsive/add-row-numbers-tinypng-2xl.png 1920w"></figure> Fonte: <a href="http://www.howtogeek.com/285597/how-to-add-a-persistent-number-row-to-androids-gboard-keyboard/" target="_blank" rel="noopener">How to Add a Persistent Number Row to Android’s Gboard Keyboard</a></p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Adicionar rotas automaticamente com arquivo de lote ao conectar VPN usando o Agendador de Tarefas</title>
+        <author>
+            <name>Dudaskank</name>
+        </author>
+        <link href="https://dudaskank.com/adicionar-rotas-automaticamente-com-arquivo-de-lote-ao-conectar-vpn-usando-o-agendador-de-tarefas/"/>
+        <id>https://dudaskank.com/adicionar-rotas-automaticamente-com-arquivo-de-lote-ao-conectar-vpn-usando-o-agendador-de-tarefas/</id>
+
+        <updated>2017-01-05T11:36:33-02:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    Aqui no serviço, para podermos fazer os testes em desenvolvimento ou fazer nossos programas se comunicarem com o mainframe, precisamos realizar uma conexão VPN para acessar os servidores de nosso cliente. Além de fazer isso, temos que executar como administrador um arquivo que adiciona as&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Aqui no serviço, para podermos fazer os testes em desenvolvimento ou fazer nossos programas se comunicarem com o mainframe, precisamos realizar uma conexão <a href="https://pt.wikipedia.org/wiki/Virtual_private_network" target="_blank" rel="noopener">VPN</a> para acessar os servidores de nosso cliente. Além de fazer isso, temos que executar como administrador um arquivo que adiciona as rotas ao nosso cliente. E a cada 10 conexões, em 11 eu esqueço de rodar esse arquivo. Pesquisei então uma maneira de automatizar isso, e encontrei um modo de adicionar rotas automaticamente com arquivo de lote ao conectar VPN usando o Agendador de Tarefas do Windows. Para isso, comece executando o prompt de comando como administrador: clique no botão iniciar, escreva <code>cmd</code>, no resultado da busca clique com o botão direito em <code>cmd.exe</code> e clique em "Executar como administrador".</p>
+<figure class="post__image wp-image-91 size-full"><img loading="lazy" src="https://dudaskank.com/media/posts/13/cmd-admin.png" alt="Executar prompt de comando como administrador" width="408" height="516" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://dudaskank.com/media/posts/13/responsive/cmd-admin-xs.png 640w ,https://dudaskank.com/media/posts/13/responsive/cmd-admin-sm.png 768w ,https://dudaskank.com/media/posts/13/responsive/cmd-admin-md.png 1024w ,https://dudaskank.com/media/posts/13/responsive/cmd-admin-lg.png 1366w ,https://dudaskank.com/media/posts/13/responsive/cmd-admin-xl.png 1600w ,https://dudaskank.com/media/posts/13/responsive/cmd-admin-2xl.png 1920w">
+<figcaption>Executar prompt de comando como administrador</figcaption>
+</figure>
+<p>Em seguida, é só executar o comando abaixo, substituindo o caminho informado para o caminho correto do seu arquivo batch e SUA_VPN pelo nome dado para sua conexão VPN.</p>
+<pre class="language-batch line-numbers"><code>schtasks /create /F /RL HIGHEST /TN "VPN Rotas" /TR "C:\Caminho\do\arquivo.bat" /SC ONEVENT /EC Application /MO " *[System[(Level=4 or Level=0) and (EventID=20225)]] and *[EventData[Data='SUA_VPN']]"</code></pre>
+<p>Isso é tudo em uma linha só, ok? Como eu precisei adicionar rotas, precisei usar o prompt de comando elevado e passar os parâmetros <code>/RL HIGHEST</code>, caso não tenha necessidade e for fazer algo que não precise disso, como abrir um site de algum IP dessa rede que conectou ou coisa do tipo, pode fazer em um prompt de comando normal e retire a parte <code>/RL HIGHEST</code> do comando.</p>
+<h2>Fontes</h2>
+<ul>
+<li><a href="https://simpleverse.wordpress.com/2010/10/06/add-routes-on-vpn-connect-with-powershell-and-task-scheduler/" target="_blank" rel="noopener">Add routes on VPN connect with Powershell and Task Scheduler</a></li>
+<li>Imagem destacada de <a href="http://www.labnol.org/software/setup-virtual-private-network-vpn/12208/" target="_blank" rel="noopener">Digital Inspiration</a></li>
+</ul>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Woocommerce - Verificando a assinatura no Webhook</title>
+        <author>
+            <name>Dudaskank</name>
+        </author>
+        <link href="https://dudaskank.com/woocommerce-verificando-a-assinatura-no-webhook/"/>
+        <id>https://dudaskank.com/woocommerce-verificando-a-assinatura-no-webhook/</id>
+        <media:content url="https://dudaskank.com/media/posts/12/outgoing-webhook_512-2.png" medium="image" />
+
+        <updated>2016-08-30T15:25:06-03:00</updated>
+            <summary type="html">
+                <![CDATA[
+                        <img src="https://dudaskank.com/media/posts/12/outgoing-webhook_512-2.png" alt="" />
+                    Nos últimos tempos, tenho trabalhado bastante com PHP e em alguns projetos escolhi usar o WordPress, que já uso aqui no blog, estou habituado e é relativamente fácil conseguir material sobre ele na internet. Desses projetos, um deles é uma loja virtual, e comecei a conhecer&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://dudaskank.com/media/posts/12/outgoing-webhook_512-2.png" class="type:primaryImage" alt="" /></p>
+                <p>Nos últimos tempos, tenho trabalhado bastante com PHP e em alguns projetos escolhi usar o <a href="http://wordpress.org/" target="_blank" rel="noopener">WordPress</a>, que já uso aqui no blog, estou habituado e é relativamente fácil conseguir material sobre ele na internet. Desses projetos, um deles é uma loja virtual, e comecei a conhecer e utilizar o famoso plugin do <a href="https://woocommerce.com/" target="_blank" rel="noopener">WooCommerce</a>, que transforma seu WordPress em uma loja virtual totalmente funcional. Nesse projeto, surgiu a necessidade de quando ocorrer determinados eventos na loja, como a criação do pedido, comunicar o evento para um outro sistema. Foi aí que descobri a existência dos <a href="https://docs.woocommerce.com/document/webhooks/" target="_blank" rel="noopener">Webhooks do WooCommerce</a>.</p>
+<h2>O que é Webhook</h2>
+<p>Segundo a <a href="https://pt.wikipedia.org/wiki/Webhook" target="_blank" rel="noopener">Wikipedia</a>, Webhooks são callbacks HTTP definidos pelo utilizador, e isso realmente resume muito bem. Quem está acostumado já em trabalhar com eventos no Javascript por exemplo, entenderá fácil. No WooCommerce, algumas ações como criar ou atualizar um produto e criar um pedido, geram eventos. Nesses eventos, o motor do WooCommerce pode chamar páginas na Web passando algum conteúdo, semelhante no jQuery que quando algo acontece em determinado seletor você chama uma função definida por você. Assim, basta criar uma página que receberá este conteúdo e processar de alguma maneira. Porém, como toda página, ela é aberta publicamente, e alguém com a URL pode tentar enviar dados falsos para ele, por exemplo para dar um desconto de 99% no próprio pedido. Para evitar isso, um dos cabeçalhos enviados para a página contém uma assinatura, que deve ser verificada para confirmar a identidade de quem enviou aquele conteúdo. E é para isso que estamos aqui! Na rede, não consegui encontrar nenhum exemplo prático em PHP, além da documentação atual nessa parte não ajudar muito, e tive um pouco de dificuldade em entender como isso poderia ser feito, então vou compartilhar com vocês o meu método, que é extremamente simples e fácil.</p>
+<h2>Verificando o X-WC-Webhook-Signature</h2>
+<p>O cabeçalho que contém a assinatura se chama X-WC-Webhook-Signature. Para calcularmos o nosso valor para comparar com ele, vamos precisar dos dados do conteúdo e do valor do campo "Segredo" quando cadastramos o Webhook, em Woocommerce &gt; Configurações &gt; API dentro do painel do WordPress.</p>
+<p> </p>
+<figure class="post__image"><img loading="lazy" src="https://dudaskank.com/media/posts/12/webhook-01.png" alt="Webhook do Woocommerce" width="923" height="588" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://dudaskank.com/media/posts/12/responsive/webhook-01-xs.png 640w ,https://dudaskank.com/media/posts/12/responsive/webhook-01-sm.png 768w ,https://dudaskank.com/media/posts/12/responsive/webhook-01-md.png 1024w ,https://dudaskank.com/media/posts/12/responsive/webhook-01-lg.png 1366w ,https://dudaskank.com/media/posts/12/responsive/webhook-01-xl.png 1600w ,https://dudaskank.com/media/posts/12/responsive/webhook-01-2xl.png 1920w">
+<figcaption>Webhook do Woocommerce</figcaption>
+</figure>
+<p>Com esse valor e o conteúdo, precisamos utilizar a função do PHP <a href="http://php.net/manual/pt_BR/function.hash-hmac.php" target="_blank" rel="noopener">hash_hmac</a> e codificar o retorno para base64. Para isso, criei esta função abaixo que faz tudo isso já:</p>
+<pre class="language-php line-numbers"><code>// função para checar se a assinatura bate, retorna true se bate, false se não.
+function checkSignature($webhook_signature, $webhook_key, $content) {
+  return strcmp($webhook_signature, base64_encode(hash_hmac('sha256', $content, $webhook_key, true))) === 0;
+}</code></pre>
+<p>Bem simples e direta, apenas uma linha pra fazer tudo que precisamos. Com isso, já sabemos se podemos confiar no conteúdo enviado ou não. Abaixo, um exemplo bem simples de script, que apenas escreve as informações recebidas e a checagem de assinatura em arquivo:</p>
+<pre class="language-php line-numbers"><code>&lt;?php
+
+// dados enviados pelo woocommerce
+$input = file_get_contents('php://input');
+// conversão da string em formato json para array associativo
+$inputJson = json_decode($input,true);
+// assinatura no header
+$allHeaders = getallheaders();
+$signature = $allHeaders['X-WC-Webhook-Signature'];
+// chave secreta, também escolhida no cadastro do webhook do woocommerce
+define ('SHARED_SECRET', 'teste edu');
+
+// arquivo para escrever saída de teste
+$fp = fopen('out.teste.txt', 'w');
+if ($fp !== false) {
+  // todos os headers
+  $str = 'headers: ' . var_export($allHeaders, true) . PHP_EOL;
+  // assinatura
+  $str .= 'X-WC-Webhook-Signature: ' . $allHeaders['X-WC-Webhook-Signature'] . PHP_EOL;
+  // gera assinatura usando o conteúdo e a chave secreta
+  $hashHmac = base64_encode(hash_hmac('sha256', $input, SHARED_SECRET, true));
+  $str .= 'hashHmac: ' . $hashHmac . PHP_EOL;
+  // checa assinatura usando a função definida ali embaixo
+  $check = checkSignature($allHeaders['X-WC-Webhook-Signature'], SHARED_SECRET, $input);
+  // resultado da checagem
+  $str .= 'assinatura ok? ' . var_export($check, true) . PHP_EOL;
+  // conteúdo no formato de array associativo, por exemplo $inputJson['product']['title']
+  $str .= 'json: ' . var_export($inputJson, true) . PHP_EOL;
+  // escreve o texto no arquivo
+  fwrite($fp, $str);
+  // fecha arquivo
+  fclose($fp);
+}
+
+// função para checar se a assinatura bate, retorna true se bate, false se não.
+function checkSignature($webhook_signature, $webhook_key, $content) {
+  $signed_data = $content;
+  $r = strcmp($webhook_signature, base64_encode(hash_hmac('sha256', $signed_data, $webhook_key, true)));
+  return  $r === 0;
+}</code></pre>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Adicionar Vhost no XAMPP</title>
+        <author>
+            <name>Dudaskank</name>
+        </author>
+        <link href="https://dudaskank.com/adicionar-vhost-no-xampp/"/>
+        <id>https://dudaskank.com/adicionar-vhost-no-xampp/</id>
+        <media:content url="https://dudaskank.com/media/posts/11/Apache_HTTP_server_logo_2016.svg_-2.png" medium="image" />
+
+        <updated>2016-05-15T22:15:30-03:00</updated>
+            <summary type="html">
+                <![CDATA[
+                        <img src="https://dudaskank.com/media/posts/11/Apache_HTTP_server_logo_2016.svg_-2.png" alt="" />
+                    Recentemente eu precisei adicionar um Vhost para minha instalação do Xampp. Tenho trabalhado bastante com PHP no último ano e minha pasta htdocs já estava um caos, então para me organizar melhor resolvi procurar informações sobre eles. Minha instalação do Xampp não é recente (5.6.3&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://dudaskank.com/media/posts/11/Apache_HTTP_server_logo_2016.svg_-2.png" class="type:primaryImage" alt="" /></p>
+                <p>Recentemente eu precisei adicionar um Vhost para minha instalação do Xampp. Tenho trabalhado bastante com PHP no último ano e minha pasta htdocs já estava um caos, então para me organizar melhor resolvi procurar informações sobre eles. Minha instalação do Xampp não é recente (5.6.3 e hoje já temos a 5.6.21), mas mesmo assim só encontrei informações muito antigas e que não funcionam mais, portanto estou escrevendo este post para o pessoal que também passar por isso, e pra mim também quando me esquecer como faz. Primeiro criei uma pasta para armazenar os arquivos do trabalho, e dentro dela criei outra onde será apontado o Vhost propriamente dito. Dentro também crie uma pasta para os logs:</p>
+<pre class="language-batch line-numbers"><code>mkdir C:\Trabalho\htdocs
+mkdir C:\Trabalho\htdocs\logs</code></pre>
+<p>Em seguida, altere o seu arquivo hosts, no Windows 10 64 bits ele se encontra em <code>C:\Windows\System32\drivers\etc</code>, adicionando uma linha no final. Será necessário permissão de administrador para salvar, caso não queira abrir o documento num editor de textos como administrador, pode copiar o arquivo hosts para a área de trabalho, editar normalmente e copiar e colar de volta para a pasta <code>C:\Windows\System32\drivers\etc</code> que neste momento o Windows irá perguntar pela permissão de administador:</p>
+<pre><code>127.0.0.1 trabalho.localhost</code></pre>
+<p>Caso queira adicionar mais de um endereço apontando para o mesmo IP, no nosso caso o computador local, só precisa dar um espaço e adicionar outros domínios na mesma linha, como por exemplo:</p>
+<pre><code>127.0.0.1  trabalho.localhost teste.com exemplo.com.br</code></pre>
+<p>Feito isso, só falta a configuração do Apache, que deve ser feita no arquivo <code>D:\xampp\apache\conf\extra\httpd-vhosts.conf</code>. Note que a primeira configuração é para manter o atual conteúdo do Apache no mesmo local (<code>http://localhost</code>), caso contrário não será possível acessar a pasta antiga novamente:</p>
+<pre class="language-apacheconf line-numbers"><code>&lt;VirtualHost *:80&gt;
+  DocumentRoot "C:/xampp/htdocs/"
+  ServerName localhost
+&lt;/VirtualHost&gt;
+&lt;VirtualHost *:80&gt;
+  DocumentRoot "C:/Trabalho/htdocs"
+  ServerName trabalho.localhost
+  ServerAdmin admin@dominio.com
+  ErrorLog "C:/Trabalho/htdocs/logs/trabalho-error.log"
+  CustomLog "C:/Trabalho/htdocs/logs/trabalho-access.log" common
+  &lt;Directory "C:/Trabalho/htdocs"&gt;
+    # --New way of doing it
+    Require all granted
+    Options All
+    &lt;/Directory&gt;
+&lt;/VirtualHost&gt;</code></pre>
+<p>Pronto, agora reinicie o Apache, caso ele esteja rodando, coloque algum index.html na sua pasta htdocs de trabalho e tente acessar <code>http://trabalho.localhost</code> para verificar se tudo está certo. Obrigado por ler até aqui, e aproveite e deixe seu comentário ou alguma sugestão nos comentários.</p>
+            ]]>
+        </content>
+    </entry>
+</feed>
