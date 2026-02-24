@@ -10,6 +10,21 @@
     },
     "items": [
         {
+            "id": "https://dudaskank.com/shopee-ira-ajustar-sua-comissao-sera-o-fim-das-placas-de-video-com-precos-competitivos-sem-juros-2/",
+            "url": "https://dudaskank.com/shopee-ira-ajustar-sua-comissao-sera-o-fim-das-placas-de-video-com-precos-competitivos-sem-juros-2/",
+            "title": "Shopee irá ajustar sua comissão, será o fim das placas de vídeo com preços competitivos sem juros?",
+            "summary": "Nos últimos meses, temos visto diversas opções em grupos de promoção de placas de vídeo com preços bem interessantes na modalidade parcelada na plataforma da Shopee. São placas como a RTX 5060 de 8 GB GDDR7 parceladas em 12x sem juros e com cupons por&hellip;",
+            "content_html": "<p>Nos últimos meses, temos visto diversas opções em grupos de promoção de placas de vídeo com preços bem interessantes na modalidade parcelada na plataforma da Shopee. São placas como a RTX 5060 de 8 GB GDDR7 parceladas em 12x sem juros  e com cupons por apenas R$ 100 de diferença do preço no Pix em relação das lojas mais conhecidas no mercado de hardware, como Kabum, Pichau, Terabyte, Patoloco, Guerra Digital, FGTEC, Waz, Balão da Informática e etc, inclusive algumas estão na plataforma também.</p>\n<p>Tanto que em uma dessas oportunidades consegui atualizar minha GPU da GTX 1660 Super para a RTX 5060 em Dezembro de 2025, apesar que procurava uma RX 9060 XT 8 GB mas na semana do upgrade não vi por preço interessante.</p>\n<p>Enfim, a partir de Março de 2026, a Shopee vai atualizar a comissão, aquela porcentagem do valor total da venda que ficará pra ela, de todas as faixas de preço, inclusive dessa faixa mais cara.</p>\n<p>Para exemplificar, no vídeo abaixo do Iskandar Souza, explicando que teremos as novas comissões, tem um comentário do usuário @felipemoralessiqueira3538, aparentemente um vendedor da Shopee, onde o PC que ele anunciava por R$ 4000 já está programado para subir para R$ 4800, com a taxa até o dia 28/02 fixa em R$ 104 e passará pra R$ 500. Ainda não perguntaram dos R$ 300 que sobra rs, mas já da pra entender que podemos ter aumentos de 10% a 20% nos preços finais em breve.</p>\n<div class=\"post__iframe\"><iframe loading=\"lazy\" width=\"560\" height=\"315\" src=\"https://www.youtube-nocookie.com/embed/z8JjDJYS9gM\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen=\"allowfullscreen\"></iframe></div>\n<p>Então, se estiver pensando em comprar algo por lá pra aproveitar o parcelamento, tente fazer isso nos próximos dias, para evitar o aumento de preços.</p>\n<p> </p>",
+            "image": "https://dudaskank.com/media/posts/21/yFN2mbiO5h98rgtvR6l2kpeNwiRDsGte4o4-18BzRza4cazxL6jK9DZprBEZYvIuSDm2LIcE0gw2120-fcrop64100005a57ffffa5a8-k-c0xffffffff-no-nd-rj1",
+            "author": {
+                "name": "Dudaskank"
+            },
+            "tags": [
+            ],
+            "date_published": "2026-02-24T01:26:30-03:00",
+            "date_modified": "2026-02-24T01:40:30-03:00"
+        },
+        {
             "id": "https://dudaskank.com/testando-o-publii/",
             "url": "https://dudaskank.com/testando-o-publii/",
             "title": "Testando o Publii",
@@ -142,21 +157,6 @@
             ],
             "date_published": "2016-08-30T15:25:06-03:00",
             "date_modified": "2026-02-23T11:23:29-03:00"
-        },
-        {
-            "id": "https://dudaskank.com/adicionar-vhost-no-xampp/",
-            "url": "https://dudaskank.com/adicionar-vhost-no-xampp/",
-            "title": "Adicionar Vhost no XAMPP",
-            "summary": "Recentemente eu precisei adicionar um Vhost para minha instalação do Xampp. Tenho trabalhado bastante com PHP no último ano e minha pasta htdocs já estava um caos, então para me organizar melhor resolvi procurar informações sobre eles. Minha instalação do Xampp não é recente (5.6.3&hellip;",
-            "content_html": "<p>Recentemente eu precisei adicionar um Vhost para minha instalação do Xampp. Tenho trabalhado bastante com PHP no último ano e minha pasta htdocs já estava um caos, então para me organizar melhor resolvi procurar informações sobre eles. Minha instalação do Xampp não é recente (5.6.3 e hoje já temos a 5.6.21), mas mesmo assim só encontrei informações muito antigas e que não funcionam mais, portanto estou escrevendo este post para o pessoal que também passar por isso, e pra mim também quando me esquecer como faz. Primeiro criei uma pasta para armazenar os arquivos do trabalho, e dentro dela criei outra onde será apontado o Vhost propriamente dito. Dentro também crie uma pasta para os logs:</p>\n<pre class=\"language-batch line-numbers\"><code>mkdir C:\\Trabalho\\htdocs\nmkdir C:\\Trabalho\\htdocs\\logs</code></pre>\n<p>Em seguida, altere o seu arquivo hosts, no Windows 10 64 bits ele se encontra em <code>C:\\Windows\\System32\\drivers\\etc</code>, adicionando uma linha no final. Será necessário permissão de administrador para salvar, caso não queira abrir o documento num editor de textos como administrador, pode copiar o arquivo hosts para a área de trabalho, editar normalmente e copiar e colar de volta para a pasta <code>C:\\Windows\\System32\\drivers\\etc</code> que neste momento o Windows irá perguntar pela permissão de administador:</p>\n<pre><code>127.0.0.1 trabalho.localhost</code></pre>\n<p>Caso queira adicionar mais de um endereço apontando para o mesmo IP, no nosso caso o computador local, só precisa dar um espaço e adicionar outros domínios na mesma linha, como por exemplo:</p>\n<pre><code>127.0.0.1  trabalho.localhost teste.com exemplo.com.br</code></pre>\n<p>Feito isso, só falta a configuração do Apache, que deve ser feita no arquivo <code>D:\\xampp\\apache\\conf\\extra\\httpd-vhosts.conf</code>. Note que a primeira configuração é para manter o atual conteúdo do Apache no mesmo local (<code>http://localhost</code>), caso contrário não será possível acessar a pasta antiga novamente:</p>\n<pre class=\"language-apacheconf line-numbers\"><code>&lt;VirtualHost *:80&gt;\n  DocumentRoot \"C:/xampp/htdocs/\"\n  ServerName localhost\n&lt;/VirtualHost&gt;\n&lt;VirtualHost *:80&gt;\n  DocumentRoot \"C:/Trabalho/htdocs\"\n  ServerName trabalho.localhost\n  ServerAdmin admin@dominio.com\n  ErrorLog \"C:/Trabalho/htdocs/logs/trabalho-error.log\"\n  CustomLog \"C:/Trabalho/htdocs/logs/trabalho-access.log\" common\n  &lt;Directory \"C:/Trabalho/htdocs\"&gt;\n    # --New way of doing it\n    Require all granted\n    Options All\n    &lt;/Directory&gt;\n&lt;/VirtualHost&gt;</code></pre>\n<p>Pronto, agora reinicie o Apache, caso ele esteja rodando, coloque algum index.html na sua pasta htdocs de trabalho e tente acessar <code>http://trabalho.localhost</code> para verificar se tudo está certo. Obrigado por ler até aqui, e aproveite e deixe seu comentário ou alguma sugestão nos comentários.</p>",
-            "image": "https://dudaskank.com/media/posts/11/Apache_HTTP_server_logo_2016.svg_-2.png",
-            "author": {
-                "name": "Dudaskank"
-            },
-            "tags": [
-            ],
-            "date_published": "2016-05-15T22:15:30-03:00",
-            "date_modified": "2026-02-23T11:28:49-03:00"
         }
     ]
 }
