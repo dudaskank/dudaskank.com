@@ -3,7 +3,7 @@
     <title>Blog do Duda</title>
     <link href="https://dudaskank.com/feed.xml" rel="self" />
     <link href="https://dudaskank.com" />
-    <updated>2026-03-02T17:27:26-03:00</updated>
+    <updated>2026-03-02T17:35:11-03:00</updated>
     <author>
         <name>Dudaskank</name>
     </author>
@@ -43,15 +43,21 @@
 <p>No meu caso, eu tenho este domínio dudaskank.com e para utilizá-lo foi simples também. No Github Pages segui o passo a passo do artigo <a href="https://docs.github.com/pt/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site" target="_blank" rel="nofollow noopener noreferrer">Gerenciar um domínio personalizado do seu site do GitHub Pages</a>, só ir nas configurações do repositório, ir na seção code and automation, pages e colocar o domínio personalizado, e no meu caso isso criou o arquivo CNAME na raiz do repositório, baixei ele e adicionei via gerenciador de arquivos do Publii também, senão o próximo commit ele apaga.</p>
 <p>Em seguida, parti para o Cloudflare, onde está configurado o domínio, ajustei os IP's do registro A para o DNS do Github e um registro CNAME do subdomínio www para o endereço do blog no github pages.</p>
 <p>Ainda no Cloudflare, já aproveitei para criar algumas regras, como redirecionar HTTP para HTTPS e colocar tudo em cache, já que é tudo estático mesmo, só clicar em Criar regra e seguir os modelos já prontos. Também no Cloudflare, na parte dos domínios ainda, configurei na aba SSL/TLS personalizado no modo completo.</p>
-<figure class="post__image"><img loading="lazy" src="https://dudaskank.com/media/posts/22/dominio-regras.png" alt="" width="2445" height="1712" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://dudaskank.com/media/posts/22/responsive/dominio-regras-xs.png 640w ,https://dudaskank.com/media/posts/22/responsive/dominio-regras-sm.png 768w ,https://dudaskank.com/media/posts/22/responsive/dominio-regras-md.png 1024w ,https://dudaskank.com/media/posts/22/responsive/dominio-regras-lg.png 1366w ,https://dudaskank.com/media/posts/22/responsive/dominio-regras-xl.png 1600w ,https://dudaskank.com/media/posts/22/responsive/dominio-regras-2xl.png 1920w">
+<figure class="post__image"><img loading="lazy" src="https://dudaskank.com/media/posts/22/dominio-regras.png" alt="Regras do domínio" width="2445" height="1712" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://dudaskank.com/media/posts/22/responsive/dominio-regras-xs.png 640w ,https://dudaskank.com/media/posts/22/responsive/dominio-regras-sm.png 768w ,https://dudaskank.com/media/posts/22/responsive/dominio-regras-md.png 1024w ,https://dudaskank.com/media/posts/22/responsive/dominio-regras-lg.png 1366w ,https://dudaskank.com/media/posts/22/responsive/dominio-regras-xl.png 1600w ,https://dudaskank.com/media/posts/22/responsive/dominio-regras-2xl.png 1920w">
 <figcaption>Regras do domínio</figcaption>
 </figure>
-<figure class="post__image"><img loading="lazy" src="https://dudaskank.com/media/posts/22/dominio-ssl.png" alt="" width="1687" height="1704" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://dudaskank.com/media/posts/22/responsive/dominio-ssl-xs.png 640w ,https://dudaskank.com/media/posts/22/responsive/dominio-ssl-sm.png 768w ,https://dudaskank.com/media/posts/22/responsive/dominio-ssl-md.png 1024w ,https://dudaskank.com/media/posts/22/responsive/dominio-ssl-lg.png 1366w ,https://dudaskank.com/media/posts/22/responsive/dominio-ssl-xl.png 1600w ,https://dudaskank.com/media/posts/22/responsive/dominio-ssl-2xl.png 1920w">
+<figure class="post__image"><img loading="lazy" src="https://dudaskank.com/media/posts/22/dominio-ssl.png" alt="Configuração para o SSL/TLS" width="1687" height="1704" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://dudaskank.com/media/posts/22/responsive/dominio-ssl-xs.png 640w ,https://dudaskank.com/media/posts/22/responsive/dominio-ssl-sm.png 768w ,https://dudaskank.com/media/posts/22/responsive/dominio-ssl-md.png 1024w ,https://dudaskank.com/media/posts/22/responsive/dominio-ssl-lg.png 1366w ,https://dudaskank.com/media/posts/22/responsive/dominio-ssl-xl.png 1600w ,https://dudaskank.com/media/posts/22/responsive/dominio-ssl-2xl.png 1920w">
 <figcaption>Configuração para o SSL/TLS</figcaption>
 </figure>
 <h2>E agora?</h2>
 <p>Tudo pronto, como pode ver na barra de endereço, está funcionando rs, resolvi o problema que tinha com o blog em PHP, que precisava de vez em quando atualizar e em razão do local que hospedava banir algumas palavras, alguns posts eu não conseguia criar ou se conseguisse não podia editar pelo painel do Wordpress, porque só de renderizar um texto com palavras como "proxy" já redirecionava o site e o deixava inutilizado.</p>
 <p>O difícil agora será a inspiração pra voltar a escrever e registrar os problemas e soluções que for encontrando e achar interessantes para quando eu me deparar com eles novamente eu lembrar do que fiz um dia.</p>
+<h2>Sincronizei o site mas... as coisas novas não apareceram, o que houve?</h2>
+<p>Se você seguiu algo semelhante ao que fiz, está usando o Cloudflare para cachear os arquivos, então para não ficar esperando ele atualizar o cache sabe Deus quando, pra subir na hora vai precisar entrear novamente nas configurações do seu domínio, aba Caching e em Configurações, clique no botão "Limpar tudo", isso apaga o cache no cloudflare e vai recarregar tudo na próxima vez e resolve isso.</p>
+<figure class="post__image"><img loading="lazy" src="https://dudaskank.com/media/posts/22/dominio-limpar-cache.png" alt="Limpando o cache" width="2423" height="1094" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://dudaskank.com/media/posts/22/responsive/dominio-limpar-cache-xs.png 640w ,https://dudaskank.com/media/posts/22/responsive/dominio-limpar-cache-sm.png 768w ,https://dudaskank.com/media/posts/22/responsive/dominio-limpar-cache-md.png 1024w ,https://dudaskank.com/media/posts/22/responsive/dominio-limpar-cache-lg.png 1366w ,https://dudaskank.com/media/posts/22/responsive/dominio-limpar-cache-xl.png 1600w ,https://dudaskank.com/media/posts/22/responsive/dominio-limpar-cache-2xl.png 1920w">
+<figcaption>Limpando o cache</figcaption>
+</figure>
+<p>Inclusive, quando fui publicar esse post e vi que não atualizou o índice, lembrei que tinha que fazer isso novamente e resolvi editar o post e atualizar com essas informações.</p>
             ]]>
         </content>
     </entry>
