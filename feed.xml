@@ -3,12 +3,56 @@
     <title>Blog do Duda</title>
     <link href="https://dudaskank.com/feed.xml" rel="self" />
     <link href="https://dudaskank.com" />
-    <updated>2026-03-02T17:35:11-03:00</updated>
+    <updated>2026-07-21T10:47:50-03:00</updated>
     <author>
         <name>Dudaskank</name>
     </author>
     <id>https://dudaskank.com</id>
 
+    <entry>
+        <title>Limpando um teclado</title>
+        <author>
+            <name>Dudaskank</name>
+        </author>
+        <link href="https://dudaskank.com/limpando-um-teclado/"/>
+        <id>https://dudaskank.com/limpando-um-teclado/</id>
+        <media:content url="https://dudaskank.com/media/posts/23/limpeza-04.jpg" medium="image" />
+            <category term="teclado"/>
+            <category term="manutenção"/>
+            <category term="limpeza"/>
+
+        <updated>2026-07-21T10:47:50-03:00</updated>
+            <summary type="html">
+                <![CDATA[
+                        <img src="https://dudaskank.com/media/posts/23/limpeza-04.jpg" alt="" />
+                    Para não deixar o blog parado até a próxima década, vamos com uma limpeza de teclado agora rs. Em 21/03/2024 comprei um belo teclado de membrana do Aliexpress, o HXSJ-V200, menos de R$ 66 na época com imposto, é um pequeno teclado 60% de membrana&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://dudaskank.com/media/posts/23/limpeza-04.jpg" class="type:primaryImage" alt="" /></p>
+                <p>Para não deixar o blog parado até a próxima década, vamos com uma limpeza de teclado agora rs.</p>
+<p>Em 21/03/2024 comprei um belo teclado de membrana do Aliexpress, o HXSJ-V200, menos de R$ 66 na época com imposto, é um pequeno teclado 60% de membrana e com um belo RGB, comprei pra ser um teclado reserva mas meu filho gostou dele e resolveu usar, conheci ele em um <a href="https://youtu.be/NZyOEZzlCk0?si=B9Oeh8fs2p4seQUA" title="O TECLADO GAMER MAIS SIMPLES, BONITO E BARATO, GOSTEI DEMAIS! " target="_blank" rel="nofollow noopener noreferrer">vídeo do MW Informática</a> e tem vários outros vídeos mostrando ele em detalhes. Inclusive o preço subiu na maioria dos vendedores onde ainda tem ele, e agora vem em um kit com mouse em diversas lojas, até acha só o teclado mas praticamente por R$ 125 com os impostos hoje, então se quiserem aproveitem <a href="https://s.click.aliexpress.com/e/_c4SsFhOR" title="HXSJ-V200" target="_blank" rel="noopener noreferrer">este vendedor aqui</a> que tem a versão preto e branco por R$ 86 já com imposto.</p>
+<p>Enfim, como já disse, é um teclado de membrana, escolhi de propósito pois prefiro desse tipo ao invés dos normalmente barulhentos e mais pesados mecânicos, e depois de mais 2 anos ele estava um bocado sujo já, mesmo fazendo uma limpeza básica passando um pano nele e chacoalhando ele de cabeça pra baixo pra cair a sujeira que cai entre as teclas, como pode ser observado nas fotos abaixo mostrando o processo de limpeza:</p>
+<div class="gallery-wrapper"><div class="gallery" data-is-empty="false" data-translation="Adicione imagens" data-columns="1">
+<figure class="gallery__item"><a href="https://dudaskank.com/media/posts/23/gallery/limpeza-01.jpeg" data-size="1280x720"><img loading="lazy" src="https://dudaskank.com/media/posts/23/gallery/limpeza-01-thumbnail.jpeg" alt="Começando a desmontar" width="720" height="405"></a>
+<figcaption>Começando a desmontar</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://dudaskank.com/media/posts/23/gallery/limpeza-02.jpeg" data-size="1280x720"><img loading="lazy" src="https://dudaskank.com/media/posts/23/gallery/limpeza-02-thumbnail.jpeg" alt="Estado lastimável" width="720" height="405"></a>
+<figcaption>Estado lastimável</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://dudaskank.com/media/posts/23/gallery/limpeza-03.jpg" data-size="1280x720"><img loading="lazy" src="https://dudaskank.com/media/posts/23/gallery/limpeza-03-thumbnail.jpg" alt="Bem melhor agora" width="720" height="405"></a>
+<figcaption>Bem melhor agora</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://dudaskank.com/media/posts/23/gallery/limpeza-04.jpg" data-size="1600x900"><img loading="lazy" src="https://dudaskank.com/media/posts/23/gallery/limpeza-04-thumbnail.jpg" alt="Resultado final" width="720" height="405"></a>
+<figcaption>Resultado final</figcaption>
+</figure>
+</div></div>
+<p>Removi as teclas uma a uma com ajuda de uma chave de fenda e com bastante cuidado, em especial com o Enter e com a barra de espaço por terem uns ferrinhos a mais e no espaço duas molas, limpei o corpo do teclado com uma escovinha macia parecida com um pincel e as teclas limpei com um pano de limpeza uma a uma e o resultado final foi bem satisfatório.</p>
+<p>Mesmo que façamos uma limpeza básica sempre, de vez em quando será necessário uma limpeza mais caprichada como essa porque a sujeira vai grudando no fundo, e como eu consegui você também consegue, só seja cuidadoso pra tirar as teclas e lembre-se de tirar uma foto do teclado antes de remover as teclas, pra saber onde cada uma vai originalmente, mas se esquecer desse passo fique calmo e procure uma imagem do mesmo modelo na internet pra ter a posição das teclas originais quando for remontá-lo.</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Blogando com Publii e hospedando no Github Pages</title>
         <author>
@@ -327,37 +371,6 @@ int main() {
 <li>Ative a opção "Linha de números".</li>
 </ol>
 <figure class="post__image"><img loading="lazy"  src="https://dudaskank.com/media/posts/14/add-row-numbers-tinypng.png" width="3620" height="1280" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://dudaskank.com/media/posts/14/responsive/add-row-numbers-tinypng-xs.png 640w ,https://dudaskank.com/media/posts/14/responsive/add-row-numbers-tinypng-sm.png 768w ,https://dudaskank.com/media/posts/14/responsive/add-row-numbers-tinypng-md.png 1024w ,https://dudaskank.com/media/posts/14/responsive/add-row-numbers-tinypng-lg.png 1366w ,https://dudaskank.com/media/posts/14/responsive/add-row-numbers-tinypng-xl.png 1600w ,https://dudaskank.com/media/posts/14/responsive/add-row-numbers-tinypng-2xl.png 1920w"></figure> Fonte: <a href="http://www.howtogeek.com/285597/how-to-add-a-persistent-number-row-to-androids-gboard-keyboard/" target="_blank" rel="noopener">How to Add a Persistent Number Row to Android’s Gboard Keyboard</a></p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Adicionar rotas automaticamente com arquivo de lote ao conectar VPN usando o Agendador de Tarefas</title>
-        <author>
-            <name>Dudaskank</name>
-        </author>
-        <link href="https://dudaskank.com/adicionar-rotas-automaticamente-com-arquivo-de-lote-ao-conectar-vpn-usando-o-agendador-de-tarefas/"/>
-        <id>https://dudaskank.com/adicionar-rotas-automaticamente-com-arquivo-de-lote-ao-conectar-vpn-usando-o-agendador-de-tarefas/</id>
-
-        <updated>2017-01-05T11:36:33-02:00</updated>
-            <summary type="html">
-                <![CDATA[
-                    Aqui no serviço, para podermos fazer os testes em desenvolvimento ou fazer nossos programas se comunicarem com o mainframe, precisamos realizar uma conexão VPN para acessar os servidores de nosso cliente. Além de fazer isso, temos que executar como administrador um arquivo que adiciona as&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Aqui no serviço, para podermos fazer os testes em desenvolvimento ou fazer nossos programas se comunicarem com o mainframe, precisamos realizar uma conexão <a href="https://pt.wikipedia.org/wiki/Virtual_private_network" target="_blank" rel="noopener">VPN</a> para acessar os servidores de nosso cliente. Além de fazer isso, temos que executar como administrador um arquivo que adiciona as rotas ao nosso cliente. E a cada 10 conexões, em 11 eu esqueço de rodar esse arquivo. Pesquisei então uma maneira de automatizar isso, e encontrei um modo de adicionar rotas automaticamente com arquivo de lote ao conectar VPN usando o Agendador de Tarefas do Windows. Para isso, comece executando o prompt de comando como administrador: clique no botão iniciar, escreva <code>cmd</code>, no resultado da busca clique com o botão direito em <code>cmd.exe</code> e clique em "Executar como administrador".</p>
-<figure class="post__image wp-image-91 size-full"><img loading="lazy" src="https://dudaskank.com/media/posts/13/cmd-admin.png" alt="Executar prompt de comando como administrador" width="408" height="516" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://dudaskank.com/media/posts/13/responsive/cmd-admin-xs.png 640w ,https://dudaskank.com/media/posts/13/responsive/cmd-admin-sm.png 768w ,https://dudaskank.com/media/posts/13/responsive/cmd-admin-md.png 1024w ,https://dudaskank.com/media/posts/13/responsive/cmd-admin-lg.png 1366w ,https://dudaskank.com/media/posts/13/responsive/cmd-admin-xl.png 1600w ,https://dudaskank.com/media/posts/13/responsive/cmd-admin-2xl.png 1920w">
-<figcaption>Executar prompt de comando como administrador</figcaption>
-</figure>
-<p>Em seguida, é só executar o comando abaixo, substituindo o caminho informado para o caminho correto do seu arquivo batch e SUA_VPN pelo nome dado para sua conexão VPN.</p>
-<pre class="language-batch line-numbers"><code>schtasks /create /F /RL HIGHEST /TN "VPN Rotas" /TR "C:\Caminho\do\arquivo.bat" /SC ONEVENT /EC Application /MO " *[System[(Level=4 or Level=0) and (EventID=20225)]] and *[EventData[Data='SUA_VPN']]"</code></pre>
-<p>Isso é tudo em uma linha só, ok? Como eu precisei adicionar rotas, precisei usar o prompt de comando elevado e passar os parâmetros <code>/RL HIGHEST</code>, caso não tenha necessidade e for fazer algo que não precise disso, como abrir um site de algum IP dessa rede que conectou ou coisa do tipo, pode fazer em um prompt de comando normal e retire a parte <code>/RL HIGHEST</code> do comando.</p>
-<h2>Fontes</h2>
-<ul>
-<li><a href="https://simpleverse.wordpress.com/2010/10/06/add-routes-on-vpn-connect-with-powershell-and-task-scheduler/" target="_blank" rel="noopener">Add routes on VPN connect with Powershell and Task Scheduler</a></li>
-<li>Imagem destacada de <a href="http://www.labnol.org/software/setup-virtual-private-network-vpn/12208/" target="_blank" rel="noopener">Digital Inspiration</a></li>
-</ul>
             ]]>
         </content>
     </entry>
