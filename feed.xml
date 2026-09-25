@@ -3,12 +3,45 @@
     <title>Blog do Duda</title>
     <link href="https://dudaskank.com/feed.xml" rel="self" />
     <link href="https://dudaskank.com" />
-    <updated>2026-07-21T10:47:50-03:00</updated>
+    <updated>2026-09-25T14:48:11-03:00</updated>
     <author>
         <name>Dudaskank</name>
     </author>
     <id>https://dudaskank.com</id>
 
+    <entry>
+        <title>Proxmox 9, LXC e Docker - sobre o erro net.ipv4.ip_unprivileged_port_start</title>
+        <author>
+            <name>Dudaskank</name>
+        </author>
+        <link href="https://dudaskank.com/proxmox-9-lxc-e-docker-sobre-o-erro-netipv4ip_unprivileged_port_start/"/>
+        <id>https://dudaskank.com/proxmox-9-lxc-e-docker-sobre-o-erro-netipv4ip_unprivileged_port_start/</id>
+        <media:content url="https://dudaskank.com/media/posts/24/Docker-Image.png" medium="image" />
+
+        <updated>2026-09-25T14:42:21-03:00</updated>
+            <summary type="html">
+                <![CDATA[
+                        <img src="https://dudaskank.com/media/posts/24/Docker-Image.png" alt="" />
+                    Após um upgrade do Docker alguns meses atrás, para sua versão 2 aparentemente, precisei fazer esses comandos pra fazer o downgrade e segurar a versão do pacote containerd.io pois não rodava mais o container devido ao erro net.ipv4.ip_unprivileged_port_start. apt list -a containerd.io apt-get install -y&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://dudaskank.com/media/posts/24/Docker-Image.png" class="type:primaryImage" alt="" /></p>
+                <p>Após um upgrade do Docker alguns meses atrás, <a href="https://joaolealdasilva.medium.com/the-2am-wake-up-call-how-dockers-v2-update-killed-my-entire-homelab-04515075a388" title="The 2am Wake-Up Call: How Docker’s v2 Update Killed My Entire Homelab" target="_blank" rel="noopener noreferrer">para sua versão 2 aparentemente</a>, precisei fazer esses comandos pra fazer o downgrade e segurar a versão do pacote containerd.io pois não rodava mais o container devido ao erro net.ipv4.ip_unprivileged_port_start.</p>
+<pre class="language-bash line-numbers"><code>apt list -a containerd.io
+apt-get install -y --allow-downgrades  containerd.io=1.7.28-1~ubuntu.24.04~noble
+apt-mark hold containerd.io</code></pre>
+<p>Depois de alguns meses que até tinha esquecido disso, entrei no servidor de novo e fui atualizar o Immich, que aliás passei da 2.7.1 para 3.2.2 com alguns perrengues, tive que editar o dockerfile pra pegar imagens de outros links me baseando no <a href="https://immich.app/docker-compose-builder" title="Docker Compose Builder" target="_blank" rel="noopener noreferrer">gerador de dockerfile do Immich</a> mesmo, muito boa a ferramenta aliás, e vi a anotação que havia feito sobre esse assunto do bug após a atualização do Proxmox.</p>
+<p>Pesquisando vários meses depois sobre o assunto, aparentemente resolveu em alguma atualização posterior, então bora destravar e atualizar o pacote também.</p>
+<pre class="language-bash line-numbers"><code>apt-mark unhold containerd.io
+apt update
+apt upgrade
+</code></pre>
+<p>Automaticamente ele reiniciou o serviço, mas só pra desencargo reiniciei o container LXC inteiro, e agora tenho tudo funcionando como deveria e agora atualizado.</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Limpando um teclado</title>
         <author>
@@ -341,36 +374,6 @@ int main() {
 <p>Como pode ser observado, temos uma coluna "ID" ali, e é o valor dessa coluna que passamos para o comando logoff. Numa janela de comando com privilégios de admin, basta executar o comando:</p>
 <pre class="language-batch line-numbers"><code>logoff &lt;ID da sessão&gt;</code></pre>
 <p>E pronto, assim que o comando retorna, a sessão do usuário que você passou já não existe mais.</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Adicione uma linha com os número no teclado do Google do Android</title>
-        <author>
-            <name>Dudaskank</name>
-        </author>
-        <link href="https://dudaskank.com/adicione-uma-linha-com-os-numero-no-teclado-do-google-do-android/"/>
-        <id>https://dudaskank.com/adicione-uma-linha-com-os-numero-no-teclado-do-google-do-android/</id>
-        <media:content url="https://dudaskank.com/media/posts/14/teclado-gboard.png" medium="image" />
-
-        <updated>2017-01-05T18:10:50-02:00</updated>
-            <summary type="html">
-                <![CDATA[
-                        <img src="https://dudaskank.com/media/posts/14/teclado-gboard.png" alt="" />
-                    Muitas vezes estou digitando no teclado e fico procurando os números, aí tenho que apertar a tecla que mostra os números e mais um monte de coisa que eu não precisava, por exemplo. Costuma acontecer isso em diversas situações, como ao digitar senhas, ou quando&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                    <p><img src="https://dudaskank.com/media/posts/14/teclado-gboard.png" class="type:primaryImage" alt="" /></p>
-                <p>Muitas vezes estou digitando no teclado e fico procurando os números, aí tenho que apertar a tecla que mostra os números e mais um monte de coisa que eu não precisava, por exemplo. Costuma acontecer isso em diversas situações, como ao digitar senhas, ou quando você manda um zapzap dizendo que achou uma promoção muito boa no mercado e quer passar o preço. Pensando nisso em outras coisas, o Google inclui no seu teclado, agora chamado de <a href="https://play.google.com/store/apps/details?id=com.google.android.inputmethod.latin" target="_blank" rel="noopener">Gboard</a>, uma opção exclusivamente para isso. Para encontrar e ativar a opção é muito simples.</p>
-<ol>
-<li>Abra o menu de configurações do GBoard, pelo teclado segure a tecla da vírgula até aparecer e selecione o ícone da engrenagem.</li>
-<li>Em seguida, escolha a opção Config. do teclado Gboard.</li>
-<li>Escolha a opção preferências</li>
-<li>Ative a opção "Linha de números".</li>
-</ol>
-<figure class="post__image"><img loading="lazy"  src="https://dudaskank.com/media/posts/14/add-row-numbers-tinypng.png" width="3620" height="1280" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://dudaskank.com/media/posts/14/responsive/add-row-numbers-tinypng-xs.png 640w ,https://dudaskank.com/media/posts/14/responsive/add-row-numbers-tinypng-sm.png 768w ,https://dudaskank.com/media/posts/14/responsive/add-row-numbers-tinypng-md.png 1024w ,https://dudaskank.com/media/posts/14/responsive/add-row-numbers-tinypng-lg.png 1366w ,https://dudaskank.com/media/posts/14/responsive/add-row-numbers-tinypng-xl.png 1600w ,https://dudaskank.com/media/posts/14/responsive/add-row-numbers-tinypng-2xl.png 1920w"></figure> Fonte: <a href="http://www.howtogeek.com/285597/how-to-add-a-persistent-number-row-to-androids-gboard-keyboard/" target="_blank" rel="noopener">How to Add a Persistent Number Row to Android’s Gboard Keyboard</a></p>
             ]]>
         </content>
     </entry>
